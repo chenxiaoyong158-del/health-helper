@@ -1114,6 +1114,9 @@ const App = () => {
             <HeartPulse className="w-10 h-10" />
             <h1 className="text-2xl font-bold tracking-wider">健康小助手</h1>
           </div>
+          <div className="bg-yellow-400 text-yellow-900 text-xs px-2 py-1 rounded font-bold">
+              Google API 版
+          </div>
         </div>
       </header>
 

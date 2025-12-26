@@ -18,17 +18,31 @@
       .markdown-body ul { list-style-type: disc; padding-left: 1.5rem; margin-bottom: 1rem; }
       .markdown-body strong { font-weight: 600; color: #1f2937; }
     </style>
-  <script type="importmap">
-{
-  "imports": {
-    "react/": "https://esm.sh/react@^19.2.3/",
-    "react": "https://esm.sh/react@^19.2.3",
-    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
-    "@google/genai": "https://esm.sh/@google/genai@^1.34.0"
-  }
-}
-</script>
-</head>
+    
+    <!-- 
+      ⚠️【部署必填】GitHub Pages 专用配置 
+      请将下方引号内的内容替换为您申请到的 Google Gemini API Key (AIza开头的那串)
+    -->
+    <script>
+      window.process = {
+        env: {
+          // 请在这里填入您的 Key，否则部署后无法使用
+          API_KEY: "AIzaSyBhK59AoTHeAdzhH2SERQ8xYVH1yWMlhIs"
+        }
+      }
+    </script>
+
+    <script type="importmap">
+    {
+      "imports": {
+        "react/": "https://esm.sh/react@^19.2.3/",
+        "react": "https://esm.sh/react@^19.2.3",
+        "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+        "@google/genai": "https://esm.sh/@google/genai@^1.34.0"
+      }
+    }
+    </script>
+  </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/index.tsx"></script>
